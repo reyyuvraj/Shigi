@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Shigi">
-        <activity android:name=".listDoctor" />
-        <activity android:name=".docDetail" />
-        <activity android:name=".newAcc" />
+        <activity android:name=".ListDoctor" />
+        <activity android:name=".DocDetail" />
+        <activity android:name=".NewAcc" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

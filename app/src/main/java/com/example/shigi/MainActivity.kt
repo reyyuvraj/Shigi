@@ -17,12 +17,12 @@ class MainActivity : AppCompatActivity() {
         val button : EditText = findViewById(R.id.in_id)
 
         button.setOnClickListener(){
-            intent = Intent(this, listDoctor::class.java)
+            intent = Intent(this, ListDoctor::class.java)
             startActivity(intent)
         }
 
         text.setOnClickListener(){
-            intent = Intent(this, newAcc::class.java)
+            intent = Intent(this, NewAcc::class.java)
             startActivity(intent)
         }
     }
