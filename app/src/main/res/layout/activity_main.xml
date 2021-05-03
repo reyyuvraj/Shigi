@@ -87,10 +87,11 @@
         android:layout_marginTop="38dp"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
-        android:background="@color/login_color"
+        android:background="@drawable/back"
         android:text="Login"
         android:textSize="18sp"
-        android:textColor="#FFFFFF"/>
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"/>
 
     <Button
         android:id="@+id/in_connect"
@@ -99,9 +100,13 @@
         android:layout_marginTop="8dp"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
-        android:background="@color/Connect_with_Facebook"
+        android:background="@drawable/back"
         android:text="Connect with Facebook"
-        android:textColor="#FFFFFF"/>
+        android:drawableLeft="@drawable/facebooklogo"
+        android:paddingLeft="80dp"
+        android:paddingRight="55dp"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"/>
 
     <LinearLayout
         android:layout_width="match_parent"
