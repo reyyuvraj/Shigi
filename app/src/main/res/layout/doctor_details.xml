@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/details_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:adjustViewBounds="true"
+        android:background="#FFFFFF"
+        android:maxWidth="45dp"
+        android:maxHeight="45dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_action_name"
+        />
+
+    <ImageView
+        android:id="@+id/doctor_pfp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_gravity="center"
+        android:contentDescription="image"
+        android:adjustViewBounds="true"
+        android:maxWidth="45dp"
+        android:maxHeight="45dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/doctor4"/>
+
+    <TextView
+        android:id="@+id/doctor_speciality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Cardiologist"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="@color/Welcome"/>
+
+    <TextView
+        android:id="@+id/doctor_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Dr. Alan C Brave"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:textColor="@color/Welcome"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="#FFFFFF"
+            android:maxWidth="45dp"
+            android:maxHeight="45dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/messenger" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="#FFFFFF"
+            android:maxWidth="45dp"
+            android:maxHeight="45dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/call"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="#FFFFFF"
+            android:maxWidth="45dp"
+            android:maxHeight="45dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/videocall"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="#FFFFFF"
+            android:maxWidth="45dp"
+            android:maxHeight="45dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/placeholder"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:text="About"
+        android:gravity="left"
+        android:textSize="30sp"
+        android:textColor="@color/Welcome"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/about_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"/>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Schedules"
+            android:textSize="30sp"
+            android:textColor="@color/Welcome"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:paddingTop="9dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/month_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="January"
+            android:textSize="15sp"
+            android:gravity="right"
+            android:paddingTop="11dp"
+            android:paddingRight="20dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <CalendarView
+        android:id="@+id/appointment_date"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="4">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="#FFFFFF"
+            android:maxWidth="45dp"
+            android:maxHeight="45dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_schedule" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_weight="3"
+            android:text="Appointment"/>
+
+    </LinearLayout>
+
+</LinearLayout>

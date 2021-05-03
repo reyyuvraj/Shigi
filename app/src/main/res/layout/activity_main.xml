@@ -9,15 +9,15 @@
     tools:context=".MainActivity">
 
     <TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Welcome,"
-    android:layout_marginTop="80dp"
-    android:layout_marginLeft="24dp"
-    android:textSize="32sp"
-    android:gravity="left"
-    android:textColor="@color/Welcome"
-    android:textStyle="bold"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome,"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="24dp"
+        android:textSize="32sp"
+        android:gravity="left"
+        android:textColor="@color/Welcome"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -39,6 +39,7 @@
         android:layout_marginRight="24dp">
 
         <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/in_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:imeOptions="actionGo"
@@ -56,6 +57,7 @@
         android:layout_marginRight="24dp">
 
         <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/in_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:imeOptions="actionGo"
@@ -65,6 +67,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
+        android:id="@+id/in_forgot"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Forgot Password?"
@@ -78,6 +81,7 @@
         android:textStyle="bold"/>
 
     <Button
+        android:id="@+id/in_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="38dp"
@@ -89,6 +93,7 @@
         android:textColor="#FFFFFF"/>
 
     <Button
+        android:id="@+id/in_connect"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -116,7 +121,7 @@
         android:textColor="@color/Welcome"/>
 
         <TextView
-            android:id="@+id/sign_up"
+            android:id="@+id/in_sign_up"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="4"
