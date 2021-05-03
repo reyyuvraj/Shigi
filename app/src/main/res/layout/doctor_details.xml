@@ -11,18 +11,17 @@
 
     <ImageButton
         android:id="@+id/details_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
+        android:layout_width="24dp"
+        android:layout_height="20dp"
         android:layout_marginLeft="24dp"
+        android:layout_marginTop="18dp"
         android:layout_marginRight="24dp"
         android:adjustViewBounds="true"
         android:background="#FFFFFF"
         android:maxWidth="45dp"
         android:maxHeight="45dp"
         android:scaleType="fitXY"
-        android:src="@drawable/ic_action_name"
-        />
+        android:src="@drawable/ic_action_name"/>
 
     <ImageView
         android:id="@+id/doctor_pfp"
@@ -37,7 +36,7 @@
         android:maxWidth="45dp"
         android:maxHeight="45dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/doctor4"/>
+        android:src="@drawable/doctor6"/>
 
     <TextView
         android:id="@+id/doctor_speciality"

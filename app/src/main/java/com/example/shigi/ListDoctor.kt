@@ -2,7 +2,10 @@ package com.example.shigi
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.ImageButton
 import android.widget.RelativeLayout
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class ListDoctor : AppCompatActivity(){
@@ -11,6 +14,13 @@ class ListDoctor : AppCompatActivity(){
         //This call the parent constructor
         super.onCreate(savedInstanceState)
         setContentView(R.layout.doctor_appointment)
+
+        val menu : ImageButton = findViewById(R.id.menu)
+
+        menu.setOnClickListener(){
+            Toast.makeText(this@ListDoctor, "Feature to be available soon", Toast.LENGTH_SHORT)
+                .show()
+        }
 
         val clickD1 : RelativeLayout = findViewById(R.id.doctor_1)
         clickD1.setOnClickListener {
