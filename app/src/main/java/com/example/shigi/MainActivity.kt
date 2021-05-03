@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val text : TextView = findViewById(R.id.in_sign_up)
-        val button : EditText = findViewById(R.id.in_id)
+        val button : Button = findViewById(R.id.in_login)
 
         button.setOnClickListener(){
             intent = Intent(this, ListDoctor::class.java)
