@@ -4,7 +4,9 @@ import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.ImageButton
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class DocDetail : AppCompatActivity() {
@@ -21,10 +23,22 @@ class DocDetail : AppCompatActivity() {
         }
 
         val back : ImageButton = findViewById(R.id.details_back)
+        val schedule : ImageButton = findViewById(R.id.doctor_schedule)
+        val appointment : Button = findViewById(R.id.doctor_appointment)
 
         back.setOnClickListener(){
             intent = Intent(this, ListDoctor::class.java)
             startActivity(intent)
+        }
+
+        schedule.setOnClickListener(){
+            Toast.makeText(this@DocDetail, "Feature to be available soon", Toast.LENGTH_SHORT)
+                    .show()
+        }
+
+        appointment.setOnClickListener(){
+            Toast.makeText(this@DocDetail, "Feature to be available soon", Toast.LENGTH_SHORT)
+                    .show()
         }
     }
 }
