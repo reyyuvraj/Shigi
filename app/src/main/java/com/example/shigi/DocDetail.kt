@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.cardview.widget.CardView
 
 class DocDetail : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +24,7 @@ class DocDetail : AppCompatActivity() {
         }
 
         val back : ImageButton = findViewById(R.id.details_back)
-        val schedule : ImageButton = findViewById(R.id.doctor_schedule)
+        val schedule : CardView = findViewById(R.id.doctor_schedule)
         val appointment : Button = findViewById(R.id.doctor_appointment)
 
         back.setOnClickListener(){

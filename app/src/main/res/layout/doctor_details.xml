@@ -73,6 +73,7 @@
         android:layout_marginRight="24dp">
 
         <ImageButton
+            android:id="@+id/doctor_message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="24dp"
@@ -86,6 +87,7 @@
             android:src="@drawable/messenger" />
 
         <ImageButton
+            android:id="@+id/doctor_call"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="24dp"
@@ -99,6 +101,7 @@
             android:src="@drawable/call"/>
 
         <ImageButton
+            android:id="@+id/doctor_video_call"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="24dp"
@@ -112,6 +115,7 @@
             android:src="@drawable/videocall"/>
 
         <ImageButton
+            android:id="@+id/doctor_location"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="24dp"
@@ -195,23 +199,29 @@
         android:layout_marginTop="15dp"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
-        android:layout_marginBottom="10dp"
-        android:layout_weight="4">
+        android:layout_marginBottom="30dp"
+        android:layout_weight="4"
+        android:orientation="horizontal">
 
-        <ImageButton
+        <androidx.cardview.widget.CardView
             android:id="@+id/doctor_schedule"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="22dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp"
-            android:layout_weight="1"
-            android:adjustViewBounds="true"
-            android:background="#FFFFFF"
-            android:maxWidth="45dp"
-            android:maxHeight="45dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/ic_schedule" />
+            android:layout_height="80dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/back">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/back"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_schedule"
+                    android:padding="25dp"/>
+
+        </androidx.cardview.widget.CardView>
 
         <Button
             android:id="@+id/doctor_appointment"
