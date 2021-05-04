@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         val text : TextView = findViewById(R.id.in_sign_up)
         val signin : Button = findViewById(R.id.in_login)
         val facebook : Button = findViewById(R.id.in_connect)
+        val forgot: TextView = findViewById(R.id.in_forgot)
         //val emailid : TextView = findViewById(R.id.in_id)
         //val password : TextView = findViewById(R.id.in_password)
 
@@ -32,6 +33,11 @@ class MainActivity : AppCompatActivity() {
         facebook.setOnClickListener(){
             Toast.makeText(this@MainActivity, "Feature to be available soon", Toast.LENGTH_SHORT)
                 .show()
+        }
+
+        forgot.setOnClickListener(){
+            Toast.makeText(this@MainActivity, "Feature to be available soon", Toast.LENGTH_SHORT)
+                    .show()
         }
     }
 }

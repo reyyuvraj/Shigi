@@ -56,5 +56,11 @@ class ListDoctor : AppCompatActivity(){
             intent = Intent(this, DocDetail::class.java)
             startActivity(intent)
         }
+
+        val clickD5 : RelativeLayout = findViewById(R.id.doctor_5)
+        clickD5.setOnClickListener {
+            intent = Intent(this, DocDetail::class.java)
+            startActivity(intent)
+        }
     }
 }

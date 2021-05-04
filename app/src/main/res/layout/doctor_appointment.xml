@@ -47,24 +47,40 @@
         android:textColor="@color/Welcome"
         android:layout_marginBottom="5dp"/>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/search_box"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="14dp"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp">
 
-        <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/search"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/search_box"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:imeOptions="actionGo"
-            android:hint="Search, e.g. Dr. Louis Pasteur"
-            android:textColor="@color/Email_ID_color"
-            android:textColorHint="#7A8089" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Search, e.g. Dr. Louis Pasteur"
+                android:textColor="@color/Email_ID_color"
+                android:textColorHint="#7A8089"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <android.widget.Button
+            android:layout_width="50dp"
+            android:layout_height="52dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/search_icon"
+            android:drawableTop="@drawable/ic_search_icon"
+            android:drawableTint="@color/white"
+            android:paddingTop="20dp"/>
+
+    </RelativeLayout>
 
     <TextView
         android:layout_width="match_parent"
@@ -78,65 +94,241 @@
         android:textColor="@color/Welcome"
         android:textStyle="bold"/>
 
-    <LinearLayout
+    <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp">
+        android:layout_marginRight="24dp"
+        >
 
-        <ImageButton
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp"
-            android:layout_weight="1"
-            android:adjustViewBounds="true"
-            android:background="#FFFFFF"
-            android:maxWidth="45dp"
-            android:maxHeight="45dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/heart" />
+            android:orientation="horizontal">
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp"
-            android:layout_weight="1"
-            android:adjustViewBounds="true"
-            android:background="#FFFFFF"
-            android:maxWidth="45dp"
-            android:maxHeight="45dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/brainstorm" />
+            <!--<android.widget.Button
+                android:layout_width="90dp"
+                android:layout_height="115dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/back"
+                android:drawableTop="@drawable/heart"
+                android:drawableTint="@color/black"
+                android:gravity="center"
+                android:text="Heart"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp"
-            android:layout_weight="1"
-            android:adjustViewBounds="true"
-            android:background="#FFFFFF"
-            android:maxWidth="45dp"
-            android:maxHeight="45dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/liver" />
+            <android.widget.Button
+                android:layout_width="90dp"
+                android:layout_height="115dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/back"
+                android:drawableTop="@drawable/heart"
+                android:drawableTint="@color/black"
+                android:gravity="center"
+                android:text="Heart"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp"
-            android:layout_weight="1"
-            android:adjustViewBounds="true"
-            android:background="#FFFFFF"
-            android:maxWidth="45dp"
-            android:maxHeight="45dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/kidneys" />
+            <android.widget.Button
+                android:layout_width="90dp"
+                android:layout_height="115dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/back"
+                android:drawableTop="@drawable/heart"
+                android:drawableTint="@color/black"
+                android:gravity="center"
+                android:text="Heart"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
-    </LinearLayout>
+            <android.widget.Button
+                android:layout_width="90dp"
+                android:layout_height="115dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/back"
+                android:drawableTop="@drawable/heart"
+                android:drawableTint="@color/black"
+                android:gravity="center"
+                android:text="Heart"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <android.widget.Button
+                android:layout_width="90dp"
+                android:layout_height="115dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/back"
+                android:drawableTop="@drawable/heart"
+                android:drawableTint="@color/black"
+                android:gravity="center"
+                android:text="Heart"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="16sp" />-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/back"
+                        android:minWidth="70dp"
+                        android:minHeight="100dp"
+                        android:maxWidth="90dp"
+                        android:maxHeight="130dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/heart"
+                        android:padding="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Heart"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/back"
+                        android:minWidth="70dp"
+                        android:minHeight="100dp"
+                        android:maxWidth="90dp"
+                        android:maxHeight="130dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/brainstorm"
+                        android:padding="7dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Brain"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/back"
+                        android:minWidth="70dp"
+                        android:minHeight="100dp"
+                        android:maxWidth="90dp"
+                        android:maxHeight="130dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/liver"
+                        android:padding="9dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Liver"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/back"
+                        android:minWidth="70dp"
+                        android:minHeight="100dp"
+                        android:maxWidth="90dp"
+                        android:maxHeight="130dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/kidneys"
+                        android:padding="7dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Kidney"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
 
     <TextView
         android:layout_width="match_parent"
