@@ -14,7 +14,7 @@ class NewAcc : AppCompatActivity() {
 
         val signin : Button = findViewById(R.id.create_login)
         val text : TextView = findViewById(R.id.create_sign_in)
-        val facebook : Button = findViewById(R.id.in_connect)
+        val facebook : Button = findViewById(R.id.create_connect)
         //val emailid : TextView = findViewById(R.id.create_id)
         //val password : TextView = findViewById(R.id.create_password)
         //val name : TextView = findViewById(R.id.create_name)

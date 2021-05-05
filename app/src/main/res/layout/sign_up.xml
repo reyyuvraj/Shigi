@@ -99,18 +99,19 @@
         />
 
     <Button
-        android:id="@+id/in_connect"
+        android:id="@+id/create_connect"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
-        android:background="@drawable/back"
+        android:background="@drawable/forfacebookconnect"
         android:text="Connect with Facebook"
         android:drawableLeft="@drawable/facebooklogo"
+        android:drawableTint="@color/fblue"
         android:paddingLeft="80dp"
-        android:paddingRight="55dp"
-        android:textColor="#FFFFFF"
+        android:paddingRight="64dp"
+        android:textColor="@color/fblue"
         android:textAllCaps="false"/>
 
     <LinearLayout
@@ -138,7 +139,7 @@
             android:text="Sign in"
             android:textSize="16sp"
             android:gravity="left"
-            android:textColor="@color/Welcome"
+            android:textColor="@color/pink2"
             android:textStyle="bold"/>
 
     </LinearLayout>

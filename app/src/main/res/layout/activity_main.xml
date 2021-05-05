@@ -63,7 +63,8 @@
             android:imeOptions="actionGo"
             android:hint="Password"
             android:textColor="@color/Email_ID_color"
-            android:textColorHint="#7A8089" />
+            android:textColorHint="#7A8089"
+            android:inputType="textPassword"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -87,7 +88,7 @@
         android:layout_marginTop="38dp"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
-        android:background="@drawable/back"
+        android:background="@drawable/forlogin"
         android:text="Login"
         android:textSize="18sp"
         android:textColor="#FFFFFF"
@@ -100,12 +101,13 @@
         android:layout_marginTop="8dp"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
-        android:background="@drawable/back"
+        android:background="@drawable/forfacebookconnect"
         android:text="Connect with Facebook"
         android:drawableLeft="@drawable/facebooklogo"
+        android:drawableTint="@color/fblue"
         android:paddingLeft="80dp"
-        android:paddingRight="55dp"
-        android:textColor="#FFFFFF"
+        android:paddingRight="64dp"
+        android:textColor="@color/fblue"
         android:textAllCaps="false"/>
 
     <LinearLayout
@@ -134,7 +136,7 @@
             android:text="Sign up"
             android:textSize="16sp"
             android:gravity="left"
-            android:textColor="@color/Welcome"
+            android:textColor="@color/pink2"
             android:textStyle="bold"/>
 
     </LinearLayout>
