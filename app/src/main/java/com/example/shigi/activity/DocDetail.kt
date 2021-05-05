@@ -1,4 +1,4 @@
-package com.example.shigi
+package com.example.shigi.activity
 
 import android.content.Intent
 import android.os.Build
@@ -9,6 +9,7 @@ import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
+import com.example.shigi.R
 
 class DocDetail : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

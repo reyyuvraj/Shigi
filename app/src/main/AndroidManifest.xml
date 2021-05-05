@@ -10,10 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Shigi">
-        <activity android:name=".ListDoctor" />
-        <activity android:name=".DocDetail" />
-        <activity android:name=".NewAcc" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.ListDoctor" />
+        <activity android:name=".activity.DocDetail" />
+        <activity android:name=".activity.NewAcc" />
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -14,7 +14,7 @@
         android:state_focused="false"
         android:state_selected="false">
         <shape android:shape="rectangle">
-            <solid android:color="#e8f0fd"/>
+            <solid android:color="#f3f4f8"/>
             <corners android:radius="30dp"/>
         </shape>
     </item>

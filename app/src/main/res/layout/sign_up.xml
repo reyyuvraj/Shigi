@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white_background"
     android:orientation="vertical"
-    tools:context=".NewAcc">
+    tools:context=".activity.NewAcc">
 
     <TextView
         android:layout_width="match_parent"
@@ -42,7 +42,6 @@
             android:id="@+id/create_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:imeOptions="actionGo"
             android:hint="Full Name"
             android:textColor="@color/Email_ID_color"
             android:textColorHint="#7A8089" />
@@ -60,7 +59,6 @@
             android:id="@+id/create_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:imeOptions="actionGo"
             android:hint="Email ID"
             android:textColor="@color/Email_ID_color"
             android:textColorHint="#7A8089" />
@@ -78,10 +76,10 @@
             android:id="@+id/create_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:imeOptions="actionGo"
             android:hint="Password"
             android:textColor="@color/Email_ID_color"
-            android:textColorHint="#7A8089" />
+            android:textColorHint="#7A8089"
+            android:inputType="textPassword"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton

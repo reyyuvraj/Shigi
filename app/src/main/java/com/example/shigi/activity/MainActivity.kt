@@ -1,10 +1,11 @@
-package com.example.shigi
+package com.example.shigi.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatDelegate
+import com.example.shigi.R
 
 class MainActivity : AppCompatActivity() {
 
