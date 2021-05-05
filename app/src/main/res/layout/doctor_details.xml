@@ -23,22 +23,21 @@
         android:scaleType="fitXY"
         android:src="@drawable/ic_action_name"/>
 
-    <ImageView
+    <com.example.shigi.displaydoctordata.RoundRectCornerImageView
         android:id="@+id/doctor_pfp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp"
         android:layout_gravity="center"
-        android:contentDescription="image"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="24dp"
         android:adjustViewBounds="true"
-        android:minWidth="70dp"
-        android:minHeight="100dp"
         android:maxWidth="150dp"
         android:maxHeight="170dp"
+        android:minWidth="70dp"
+        android:minHeight="100dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/doctor6"/>
+        android:src="@drawable/doctor6" />
 
     <TextView
         android:id="@+id/doctor_speciality"
