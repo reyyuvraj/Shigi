@@ -2,15 +2,15 @@ package com.example.shigi.doctordata
 
 import com.example.shigi.R
 
-object doctorList {
+object DoctorList {
 
     const val email_id: String = "email"
 
-    fun getList(): ArrayList<doctorStatus>{
-        val dList = ArrayList<doctorStatus>()
+    fun getList(): ArrayList<DoctorStatus>{
+        val dList = ArrayList<DoctorStatus>()
 
         //1
-        val d1 = doctorStatus(
+        val d1 = DoctorStatus(
             1,
             "Dr. Alan C. Brave",
             "Cardiologist",
@@ -21,7 +21,7 @@ object doctorList {
         dList.add(d1)
 
         //2
-        val d2 = doctorStatus(
+        val d2 = DoctorStatus(
             2,
             "Dr. Michael Aaron",
             "Orthodontist",
@@ -32,7 +32,7 @@ object doctorList {
         dList.add(d2)
 
         //3
-        val d3 = doctorStatus(
+        val d3 = DoctorStatus(
             3,
             "Dr. Shelley Ramon",
             "Eye Specialist",
@@ -43,7 +43,7 @@ object doctorList {
         dList.add(d3)
 
         //4
-        val d4 = doctorStatus(
+        val d4 = DoctorStatus(
             4,
             "Dr. Jake Brown",
             "ENT Specialist",
@@ -54,7 +54,7 @@ object doctorList {
         dList.add(d4)
 
         //5
-        val d5 = doctorStatus(
+        val d5 = DoctorStatus(
             5,
             "Dr. Peter Geller",
             "Psychiatrist",

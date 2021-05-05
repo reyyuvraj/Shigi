@@ -1,6 +1,6 @@
 package com.example.shigi.doctordata
 
-data class doctorStatus(
+data class DoctorStatus(
     val id: Int,
     val name: String,
     val speciality : String,

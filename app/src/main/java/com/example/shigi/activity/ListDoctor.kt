@@ -9,8 +9,12 @@ import android.widget.RelativeLayout
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.shigi.R
+import com.example.shigi.doctordata.DoctorStatus
 
 class ListDoctor : AppCompatActivity(){
+
+    //private var mId : Int = 1
+    //private var mDoctor : ArrayList<DoctorStatus>? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         //This call the parent constructor
@@ -60,6 +64,12 @@ class ListDoctor : AppCompatActivity(){
         clickD5.setOnClickListener {
             intent = Intent(this, DocDetail::class.java)
             startActivity(intent)
+
+            /*val doc = mDoctor!!.get(4)
+            doctor_pfp.setImageResource(doc.image)
+            doctor_speciality.text = doc.speciality
+            doctor_name.text = doc.name
+            doctor_about = doc.about*/
         }
     }
 }

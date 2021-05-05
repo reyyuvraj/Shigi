@@ -10,13 +10,24 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import com.example.shigi.R
+import com.example.shigi.doctordata.DoctorList
+import com.example.shigi.doctordata.DoctorStatus
 
 class DocDetail : AppCompatActivity() {
+
+    private var mImage : Int? = null
+    private var mSpecial : String? = null
+    private var mName : String? = null
+    private var mId : Int? = null
+    private var mDoctor : ArrayList<DoctorStatus>? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.doctor_details)
 
         //window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
+
+        mDoctor = DoctorList.getList()
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             window.setDecorFitsSystemWindows(false)
