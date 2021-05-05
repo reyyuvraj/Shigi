@@ -81,7 +81,7 @@
         android:layout_marginBottom="5dp"
         android:textStyle="bold"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/in_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -94,7 +94,7 @@
         android:textColor="#FFFFFF"
         android:textAllCaps="false"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/in_connect"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
