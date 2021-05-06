@@ -9,6 +9,7 @@
     tools:context=".activity.MainActivity">
 
     <TextView
+        android:id="@+id/welcome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Welcome,"
@@ -20,6 +21,7 @@
         android:textStyle="bold"/>
 
     <TextView
+        android:id="@+id/sign_in_to_continue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sign in to continue!"
@@ -31,6 +33,7 @@
         android:layout_marginBottom="5dp"/>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/card_1"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -48,6 +51,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/card_2"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -110,6 +114,7 @@
         android:textAllCaps="false"/>
 
     <LinearLayout
+        android:id="@+id/im_a_new_user_sign_up"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="130dp"
@@ -119,13 +124,14 @@
         android:layout_weight="7">
 
         <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="3"
-        android:text="I'm a new user, "
-        android:textSize="16sp"
-        android:gravity="right"
-        android:textColor="@color/Welcome"/>
+            android:id="@+id/im_a_new_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="I'm a new user, "
+            android:textSize="16sp"
+            android:gravity="right"
+            android:textColor="@color/Welcome"/>
 
         <TextView
             android:id="@+id/in_sign_up"

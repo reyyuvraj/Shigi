@@ -12,7 +12,7 @@
         android:id="@+id/menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="29dp"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
         android:adjustViewBounds="true"
@@ -384,17 +384,16 @@
     </HorizontalScrollView>
 
 
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Top Doctors"
-        android:layout_marginTop="11dp"
         android:layout_marginLeft="24dp"
+        android:layout_marginTop="11dp"
         android:layout_marginRight="24dp"
-        android:textSize="30sp"
+        android:text="Top Doctors"
         android:textColor="@color/Welcome"
-        android:textStyle="bold"/>
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <ScrollView
         android:layout_width="match_parent"
