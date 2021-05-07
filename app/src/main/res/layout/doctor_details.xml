@@ -212,6 +212,7 @@
         android:layout_marginTop="3dp"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
+        android:textSize="20dp"
         android:text="Dr. Alan C. Brave is a cardiologist in Saint Louis, Missouri and is affiliated with multiple hospitals in the area."/>
 
     <LinearLayout
