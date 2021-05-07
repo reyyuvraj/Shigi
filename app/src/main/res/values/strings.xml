@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Shigi</string>
+    <string name="less_than">\u003C</string>
+    <string name="greater_than">\u003E</string>
 </resources>
