@@ -215,40 +215,51 @@
         android:textSize="20dp"
         android:text="Dr. Alan C. Brave is a cardiologist in Saint Louis, Missouri and is affiliated with multiple hospitals in the area."/>
 
-    <LinearLayout
-
+    <RelativeLayout
+        android:id="@+id/cal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_weight="1">
+        android:layout_below="@+id/about"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="horizontal">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Schedules"
-            android:textSize="30sp"
-            android:textColor="@color/Welcome"
-            android:textStyle="bold"
-            android:gravity="left"
-            android:paddingTop="10dp"
-            android:paddingLeft="5dp"
-            android:layout_weight="1"/>
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold"/>
 
-        <TextView
-            android:id="@+id/month_display"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="January"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            android:gravity="right"
-            android:paddingTop="11dp"
-            android:paddingRight="20dp"
-            android:layout_weight="1" />
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
 
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/less_than"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" January "
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/greater_than"
+                android:textSize="24dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
 
     <CalendarView
         android:id="@+id/appointment_date"
